@@ -1,0 +1,9 @@
+---
+ 
+- hosts: ALL
+#  sudo: yes
+  tasks:
+    # 
+  - name: update CapeBreton Playlist
+    command: youtube-dl -f best -c  -o "/home/dlandry/Videos/CapeBreton/%(title)s.%(ext)s" "https://www.youtube.com/playlist?list=PLFctE_wAjrOOGhQci69fq-Ps7Jn1OgmTn"    
+
