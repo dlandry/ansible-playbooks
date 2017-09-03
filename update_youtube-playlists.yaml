@@ -7,7 +7,7 @@
     # 
   - name: update CapeBreton Playlist
 #    command: youtube-dl -f best -c  -o "/home/dlandry/Videos/CapeBreton/%(title)s.%(ext)s" "https://www.youtube.com/playlist?list=PLFctE_wAjrOOGhQci69fq-Ps7Jn1OgmTn"    
-    command: 'youtube-dl -f best -c -o {{ item.location }} {{ item.video }}'
+    command: 'youtube-dl -f best -c -i -o {{ item.location }} {{ item.video }}'
     with_items:
       - { location: /home/dlandry/Videos/CapeBreton/%(title)s.%(ext)s, video: "https://www.youtube.com/playlist?list=PLFctE_wAjrOOGhQci69fq-Ps7Jn1OgmTn" }
       - { location: /home/dlandry/Videos/Kalafina/Video/%(title)s.%(ext)s, video: "https://www.youtube.com/playlist?list=PLFctE_wAjrOMJT7StG32WPOlQO8z3mg4R" }
