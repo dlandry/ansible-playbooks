@@ -10,3 +10,7 @@
     command: 'youtube-dl -f best -c -o {{ item.location }} {{ item.video }}'
     with_items:
       - { location: /home/dlandry/Videos/CapeBreton/%(title)s.%(ext)s, video: "https://www.youtube.com/playlist?list=PLFctE_wAjrOOGhQci69fq-Ps7Jn1OgmTn" }
+      - { location: /home/dlandry/Videos/Kalafina/Video/%(title)s.%(ext)s, video: "https://www.youtube.com/playlist?list=PLFctE_wAjrOMJT7StG32WPOlQO8z3mg4R" }
+      - { location: /home/dlandry/Videos/One-Ok_Rock/Video/%(title)s.%(ext)s, video: "https://www.youtube.com/playlist?list=PLFctE_wAjrONcU7pjE0W8PcC0WG9NNTcc" }
+      - { location: /home/dlandry/Videos/Various-Japanese/%(title)s.%(ext)s, video: "https://www.youtube.com/playlist?list=PLFctE_wAjrOObMYZM8FRvkzIw20IZZd64" }
+
